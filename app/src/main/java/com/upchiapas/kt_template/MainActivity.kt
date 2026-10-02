@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.upchiapas.kt_template.ui.components.TotalCaloriesCard
+import com.upchiapas.kt_template.ui.screens.CalculatorScreen
 import com.upchiapas.kt_template.ui.theme.Kt_templateTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,12 +21,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Kt_templateTheme {
-                // Hola mundo
+                CalculatorScreen()
                 }
             }
         }
     }
-}
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
